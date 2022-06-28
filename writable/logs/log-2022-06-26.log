@@ -1,0 +1,379 @@
+ERROR - 2022-06-26 09:26:23 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: NO)
+CRITICAL - 2022-06-26 09:26:23 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(156): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(88): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(896): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-26 09:26:41 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: NO)
+CRITICAL - 2022-06-26 09:26:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(156): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(88): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(896): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-26 10:18:31 --> Unknown column 'nama' in 'field list'
+ERROR - 2022-06-26 10:22:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DOBULE NOT NULL,
+	`id_prodi` INT NOT NULL,
+	`id_kelas` INT NOT NULL,
+	created_at' at line 7
+ERROR - 2022-06-26 10:24:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DOBULE NOT NULL,
+	`id_prodi` INT(5) NOT NULL,
+	`id_kelas` INT(5) NOT NULL,
+	crea' at line 7
+ERROR - 2022-06-26 10:25:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DOBULE NOT NULL,
+	`id_prodi` INT(5) NOT NULL,
+	`id_kelas` INT(5) NOT NULL,
+	crea' at line 7
+ERROR - 2022-06-26 10:25:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DOBULE NOT NULL,
+	`id_prodi` INT(5) NOT NULL,
+	`id_kelas` INT(5) NOT NULL,
+	crea' at line 7
+ERROR - 2022-06-26 10:26:02 --> Unknown column 'nama_kelas' in 'field list'
+ERROR - 2022-06-26 10:26:19 --> Unknown column 'nim' in 'field list'
+ERROR - 2022-06-26 10:29:40 --> Table 'smart_school.kategori_peserta' doesn't exist
+CRITICAL - 2022-06-26 10:29:40 --> Table 'smart_school.kategori_peserta' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `kategori_peserta`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kategori_peserta`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kategori_peserta`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kategori_peserta`', [], false)
+ 5 SYSTEMPATH/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/KategoriPeserta.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\KategoriPeserta->index()
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriPeserta))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-26 10:52:59 --> Table 'smart_school.comments' doesn't exist
+CRITICAL - 2022-06-26 10:52:59 --> Table 'smart_school.comments' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `mahasiswa`
+JOIN `comments` ON `comments`.`id` = `blogs`.`id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasiswa`
+JOIN `comments` ON `comments`.`id` = `blogs`.`id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasiswa`
+JOIN `comments` ON `comments`.`id` = `blogs`.`id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasiswa`
+JOIN `comments` ON `comments`.`id` = `blogs`.`id`', [], false)
+ 5 SYSTEMPATH/Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Mahasiswa.php(24): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-26 10:53:49 --> Unknown column 'comments.id' in 'on clause'
+CRITICAL - 2022-06-26 10:53:49 --> Unknown column 'comments.id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `mahasiswa`
+JOIN `kelas` ON `comments`.`id` = `blogs`.`id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasiswa`
+JOIN `kelas` ON `comments`.`id` = `blogs`.`id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasiswa`
+JOIN `kelas` ON `comments`.`id` = `blogs`.`id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasiswa`
+JOIN `kelas` ON `comments`.`id` = `blogs`.`id`', [], false)
+ 5 SYSTEMPATH/Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Mahasiswa.php(24): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-26 10:53:53 --> Unknown column 'mahasiswa.kelas_id' in 'on clause'
+CRITICAL - 2022-06-26 10:53:53 --> Unknown column 'mahasiswa.kelas_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `mahasiswa`
+JOIN `kelas` ON `kelas`.`id` = `mahasiswa`.`kelas_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasiswa`
+JOIN `kelas` ON `kelas`.`id` = `mahasiswa`.`kelas_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasiswa`
+JOIN `kelas` ON `kelas`.`id` = `mahasiswa`.`kelas_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasiswa`
+JOIN `kelas` ON `kelas`.`id` = `mahasiswa`.`kelas_id`', [], false)
+ 5 SYSTEMPATH/Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Mahasiswa.php(24): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 10:54:40 --> Undefined variable $db
+in APPPATH/Controllers/Mahasiswa.php on line 21.
+ 1 APPPATH/Controllers/Mahasiswa.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH/Controllers/Mahasiswa.php', 21)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 10:56:17 --> Undefined property: App\Controllers\Mahasiswa::$db
+in APPPATH/Controllers/Mahasiswa.php on line 21.
+ 1 APPPATH/Controllers/Mahasiswa.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Mahasiswa::$db', 'APPPATH/Controllers/Mahasiswa.php', 21)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 10:56:19 --> Undefined property: App\Controllers\Mahasiswa::$db
+in APPPATH/Controllers/Mahasiswa.php on line 21.
+ 1 APPPATH/Controllers/Mahasiswa.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Mahasiswa::$db', 'APPPATH/Controllers/Mahasiswa.php', 21)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 10:56:20 --> Undefined property: App\Controllers\Mahasiswa::$db
+in APPPATH/Controllers/Mahasiswa.php on line 21.
+ 1 APPPATH/Controllers/Mahasiswa.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Mahasiswa::$db', 'APPPATH/Controllers/Mahasiswa.php', 21)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 10:56:35 --> Undefined property: App\Controllers\Mahasiswa::$db
+in APPPATH/Controllers/Mahasiswa.php on line 21.
+ 1 APPPATH/Controllers/Mahasiswa.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Mahasiswa::$db', 'APPPATH/Controllers/Mahasiswa.php', 21)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 10:56:43 --> Undefined property: App\Controllers\Mahasiswa::$db
+in APPPATH/Controllers/Mahasiswa.php on line 21.
+ 1 APPPATH/Controllers/Mahasiswa.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Mahasiswa::$db', 'APPPATH/Controllers/Mahasiswa.php', 21)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-26 10:59:28 --> Unknown column 'mahasiswa.kelas_id' in 'on clause'
+CRITICAL - 2022-06-26 10:59:28 --> Unknown column 'mahasiswa.kelas_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `mahasiswa`
+JOIN `kelas` ON `kelas`.`id` = `mahasiswa`.`kelas_id`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mahasiswa`
+JOIN `kelas` ON `kelas`.`id` = `mahasiswa`.`kelas_id`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mahasiswa`
+JOIN `kelas` ON `kelas`.`id` = `mahasiswa`.`kelas_id`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasiswa`
+JOIN `kelas` ON `kelas`.`id` = `mahasiswa`.`kelas_id`', [], false)
+ 5 APPPATH/Models/MahasiswaModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Mahasiswa.php(19): App\Models\MahasiswaModel->getMahasiswa()
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 11:00:46 --> Cannot use object of type stdClass as array
+in APPPATH/Views/pages/mahasiswa/index.php on line 72.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/mahasiswa/index', [], true)
+ 4 APPPATH/Controllers/Mahasiswa.php(21): view('pages/mahasiswa/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 11:00:54 --> Cannot use object of type stdClass as array
+in APPPATH/Views/pages/mahasiswa/index.php on line 72.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/mahasiswa/index', [], true)
+ 4 APPPATH/Controllers/Mahasiswa.php(21): view('pages/mahasiswa/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 11:00:55 --> Cannot use object of type stdClass as array
+in APPPATH/Views/pages/mahasiswa/index.php on line 72.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/mahasiswa/index', [], true)
+ 4 APPPATH/Controllers/Mahasiswa.php(21): view('pages/mahasiswa/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 11:00:56 --> Cannot use object of type stdClass as array
+in APPPATH/Views/pages/mahasiswa/index.php on line 72.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/mahasiswa/index', [], true)
+ 4 APPPATH/Controllers/Mahasiswa.php(21): view('pages/mahasiswa/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 11:00:56 --> Cannot use object of type stdClass as array
+in APPPATH/Views/pages/mahasiswa/index.php on line 72.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/mahasiswa/index', [], true)
+ 4 APPPATH/Controllers/Mahasiswa.php(21): view('pages/mahasiswa/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 11:00:57 --> Cannot use object of type stdClass as array
+in APPPATH/Views/pages/mahasiswa/index.php on line 72.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/mahasiswa/index', [], true)
+ 4 APPPATH/Controllers/Mahasiswa.php(21): view('pages/mahasiswa/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 11:00:57 --> Cannot use object of type stdClass as array
+in APPPATH/Views/pages/mahasiswa/index.php on line 72.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/mahasiswa/index', [], true)
+ 4 APPPATH/Controllers/Mahasiswa.php(21): view('pages/mahasiswa/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 11:00:58 --> Cannot use object of type stdClass as array
+in APPPATH/Views/pages/mahasiswa/index.php on line 72.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/mahasiswa/index', [], true)
+ 4 APPPATH/Controllers/Mahasiswa.php(21): view('pages/mahasiswa/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 11:00:58 --> Cannot use object of type stdClass as array
+in APPPATH/Views/pages/mahasiswa/index.php on line 72.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/mahasiswa/index', [], true)
+ 4 APPPATH/Controllers/Mahasiswa.php(21): view('pages/mahasiswa/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 11:00:59 --> Cannot use object of type stdClass as array
+in APPPATH/Views/pages/mahasiswa/index.php on line 72.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/mahasiswa/index', [], true)
+ 4 APPPATH/Controllers/Mahasiswa.php(21): view('pages/mahasiswa/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 11:00:59 --> Cannot use object of type stdClass as array
+in APPPATH/Views/pages/mahasiswa/index.php on line 72.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/mahasiswa/index', [], true)
+ 4 APPPATH/Controllers/Mahasiswa.php(21): view('pages/mahasiswa/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 11:00:59 --> Cannot use object of type stdClass as array
+in APPPATH/Views/pages/mahasiswa/index.php on line 72.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/mahasiswa/index', [], true)
+ 4 APPPATH/Controllers/Mahasiswa.php(21): view('pages/mahasiswa/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 11:01:18 --> Cannot use object of type stdClass as array
+in APPPATH/Views/pages/mahasiswa/index.php on line 75.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/mahasiswa/index', [], true)
+ 4 APPPATH/Controllers/Mahasiswa.php(21): view('pages/mahasiswa/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 11:01:40 --> Cannot use object of type stdClass as array
+in APPPATH/Views/pages/mahasiswa/index.php on line 73.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/mahasiswa/index', [], true)
+ 4 APPPATH/Controllers/Mahasiswa.php(21): view('pages/mahasiswa/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-26 11:01:47 --> Cannot use object of type stdClass as array
+in APPPATH/Views/pages/mahasiswa/index.php on line 76.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/mahasiswa/index', [], true)
+ 4 APPPATH/Controllers/Mahasiswa.php(21): view('pages/mahasiswa/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Mahasiswa->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

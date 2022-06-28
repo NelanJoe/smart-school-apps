@@ -1,0 +1,287 @@
+CRITICAL - 2022-06-24 16:16:54 --> Call to undefined function CodeIgniter\locale_set_default()
+in SYSTEMPATH\CodeIgniter.php on line 193.
+ 1 ROOTPATH\spark(71): CodeIgniter\CodeIgniter->initialize()
+<<<<<<< HEAD
+CRITICAL - 2022-06-24 09:47:06 --> Access level to App\Models\AdminModel::$db must be protected (as in class CodeIgniter\Model) or weaker
+in APPPATH\Models\AdminModel.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-06-24 09:48:17 --> Access level to App\Models\AdminModel::$db must be protected (as in class CodeIgniter\Model) or weaker
+in APPPATH\Models\AdminModel.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-06-24 09:53:12 --> Undefined variable: jKegiatan
+in APPPATH\Views\pages\index.php on line 22.
+ 1 APPPATH\Views\pages\index.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jKegiatan', 'APPPATH\\Views\\pages\\index.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(21): view('pages/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-24 09:57:17 --> Undefined variable: jenis
+in APPPATH\Views\pages\index.php on line 20.
+ 1 APPPATH\Views\pages\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jenis', 'APPPATH\\Views\\pages\\index.php', 20, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(19): view('pages/index')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-24 10:01:19 --> Undefined variable: jenis
+in APPPATH\Views\pages\index.php on line 20.
+ 1 APPPATH\Views\pages\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jenis', 'APPPATH\\Views\\pages\\index.php', 20, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(19): view('pages/index')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-24 10:17:37 --> Call to undefined method CodeIgniter\View\View::extends()
+in APPPATH\Views\jenis\index.php on line 1.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('jenis/index', [], true)
+ 4 APPPATH\Controllers\Admin.php(26): view('jenis/index')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->jenis()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+=======
+ERROR - 2022-06-24 09:46:23 --> Error connecting to the database: Unknown database 'ci4'
+ERROR - 2022-06-24 09:47:27 --> Error connecting to the database: Unknown database 'ci4'
+ERROR - 2022-06-24 09:47:29 --> Error connecting to the database: Unknown database 'ci4'
+CRITICAL - 2022-06-24 10:04:17 --> Invalid file: pages.index
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages.index')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages.index', [], true)
+ 3 APPPATH/Controllers/Home.php(9): view('pages.index')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+<<<<<<< HEAD
+>>>>>>> df74f8299306b125fc9318755a735930889e33b8
+ERROR - 2022-06-24 10:51:38 --> Error connecting to the database: Unknown database 'dbeventorganizer'
+ERROR - 2022-06-24 11:22:52 --> Table 'dbeventorganizer.jenis_kegiatan' doesn't exist
+CRITICAL - 2022-06-24 11:22:52 --> Table 'dbeventorganizer.jenis_kegiatan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `jenis_kegiatan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `jenis_kegiatan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `jenis_kegiatan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `jenis_kegiatan`', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AdminModel.php(13): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Admin.php(24): App\Models\AdminModel->getAll()
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->jenis()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-24 11:23:49 --> Undefined variable: data
+in APPPATH\Controllers\Admin.php on line 26.
+ 1 APPPATH\Controllers\Admin.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Controllers\\Admin.php', 26, [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->jenis()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-24 18:26:38 --> Call to undefined function CodeIgniter\locale_set_default()
+in SYSTEMPATH\CodeIgniter.php on line 193.
+ 1 ROOTPATH\spark(71): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2022-06-24 11:31:45 --> Undefined variable: jenis
+in APPPATH\Views\jenis\index.php on line 23.
+ 1 APPPATH\Views\jenis\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jenis', 'APPPATH\\Views\\jenis\\index.php', 23, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jenis\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('jenis/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(26): view('jenis/index')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Admin->jenis()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+=======
+CRITICAL - 2022-06-24 11:07:51 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH/Views/layouts/aside.php on line 16.
+ 1 APPPATH/Views/layouts/aside.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'APPPATH/Views/layouts/aside.php', 16)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layouts/aside.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(429): CodeIgniter\View\View->render('layouts/aside', null, true)
+ 5 APPPATH/Views/layouts/templates.php(36): CodeIgniter\View\View->include('layouts/aside')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layouts/templates.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('layouts/templates', [], true)
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/index', [], true)
+10 APPPATH/Controllers/Home.php(11): view('pages/index')
+11 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+12 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-24 11:12:43 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH/Views/layouts/aside.php on line 16.
+ 1 APPPATH/Views/layouts/aside.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'APPPATH/Views/layouts/aside.php', 16)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layouts/aside.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(429): CodeIgniter\View\View->render('layouts/aside', null, true)
+ 5 APPPATH/Views/layouts/templates.php(36): CodeIgniter\View\View->include('layouts/aside')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layouts/templates.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('layouts/templates', [], true)
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/index', [], true)
+10 APPPATH/Controllers/Home.php(11): view('pages/index')
+11 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+12 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-24 11:13:09 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH/Views/layouts/aside.php on line 16.
+ 1 APPPATH/Views/layouts/aside.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'APPPATH/Views/layouts/aside.php', 16)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layouts/aside.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(429): CodeIgniter\View\View->render('layouts/aside', null, true)
+ 5 APPPATH/Views/layouts/templates.php(36): CodeIgniter\View\View->include('layouts/aside')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layouts/templates.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('layouts/templates', [], true)
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/index', [], true)
+10 APPPATH/Controllers/Home.php(11): view('pages/index')
+11 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+12 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-24 11:14:13 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH/Views/layouts/aside.php on line 17.
+ 1 APPPATH/Views/layouts/aside.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', 'APPPATH/Views/layouts/aside.php', 17)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layouts/aside.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(429): CodeIgniter\View\View->render('layouts/aside', null, true)
+ 5 APPPATH/Views/layouts/templates.php(36): CodeIgniter\View\View->include('layouts/aside')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layouts/templates.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('layouts/templates', [], true)
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/index', [], true)
+10 APPPATH/Controllers/Home.php(11): view('pages/index')
+11 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+12 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-24 11:19:50 --> Undefined variable $helper
+in APPPATH/Views/layouts/aside.php on line 16.
+ 1 APPPATH/Views/layouts/aside.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $helper', 'APPPATH/Views/layouts/aside.php', 16)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layouts/aside.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(429): CodeIgniter\View\View->render('layouts/aside', null, true)
+ 5 APPPATH/Views/layouts/templates.php(36): CodeIgniter\View\View->include('layouts/aside')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layouts/templates.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('layouts/templates', [], true)
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/index', [], true)
+10 APPPATH/Controllers/Home.php(11): view('pages/index')
+11 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+12 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-24 11:22:58 --> Call to undefined method Myth\Auth\Config\Auth::user()
+in APPPATH/Controllers/Home.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-24 11:40:55 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 12.
+ 1 APPPATH/Controllers/Home.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH/Controllers/Home.php', 12)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-24 11:41:05 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 12.
+ 1 APPPATH/Controllers/Home.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH/Controllers/Home.php', 12)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-24 11:41:06 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 12.
+ 1 APPPATH/Controllers/Home.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH/Controllers/Home.php', 12)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-24 11:41:07 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 12.
+ 1 APPPATH/Controllers/Home.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH/Controllers/Home.php', 12)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-24 12:22:52 --> Undefined array key "auth"
+in APPPATH/Controllers/Home.php on line 13.
+ 1 APPPATH/Controllers/Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auth"', 'APPPATH/Controllers/Home.php', 13)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-24 12:30:44 --> Undefined array key "auth"
+in APPPATH/Controllers/Home.php on line 13.
+ 1 APPPATH/Controllers/Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auth"', 'APPPATH/Controllers/Home.php', 13)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-24 12:30:46 --> Undefined array key "auth"
+in APPPATH/Controllers/Home.php on line 13.
+ 1 APPPATH/Controllers/Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auth"', 'APPPATH/Controllers/Home.php', 13)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-24 12:30:55 --> Object of class Myth\Auth\Entities\User could not be converted to string
+in APPPATH/Views/layouts/aside.php on line 16.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/View/View.php(429): CodeIgniter\View\View->render('layouts/aside', null, true)
+ 4 APPPATH/Views/layouts/templates.php(36): CodeIgniter\View\View->include('layouts/aside')
+ 5 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layouts/templates.php')
+ 6 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('layouts/templates', [], true)
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/index', [], true)
+ 9 APPPATH/Controllers/Home.php(13): view('pages/index')
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-24 22:04:26 --> Unknown table 'eventorganizer.kategori_peserta'
+ERROR - 2022-06-24 23:24:10 --> Unknown column 'password' in 'field list'
+ERROR - 2022-06-24 23:25:54 --> Duplicate entry 'admin@gmail.com' for key 'users.email'
+ERROR - 2022-06-24 23:52:16 --> Duplicate entry 'admin@gmail.com' for key 'users.email'
+>>>>>>> 7acd4e188236e222ed7f57e677822a6d62391655
