@@ -80,7 +80,7 @@ $routes->group('', ['filter' => 'login'], function ($routes) {
     $routes->group('/mahasiswa', function ($routes) {
         $routes->get('/', 'Mahasiswa::index');
         $routes->get('create', 'Mahasiswa::create');
-        $routes->post('save', 'Mahasiswa::save');
+        $routes->post('store', 'Mahasiswa::store');
         $routes->get('edit/(:num)', 'Mahasiswa::edit/$1');
         $routes->get('detail/(:num)', 'Mahasiswa::detail/$1');
         $routes->get('delete/(:num)', 'Mahasiswa::delete/$1');

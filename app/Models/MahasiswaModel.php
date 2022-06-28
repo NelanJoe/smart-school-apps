@@ -14,7 +14,7 @@ class MahasiswaModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['nama', 'nim', 'ipk', 'id_kelas', 'tmp_lahir', 'tgl_lahir', 'created_at', 'updated_at'];
 
     // Dates
     protected $useTimestamps = false;
@@ -47,6 +47,57 @@ class MahasiswaModel extends Model
             ->select("mahasiswa.*,kelas.nama as nama_kelas,prodi.nama as nama_prodi")
             ->join('kelas', 'kelas.id = mahasiswa.id_kelas')
             ->join('prodi', 'prodi.id = mahasiswa.id_prodi')
+            ->get();
+        return $query;
+    }
+
+    public function createMahasiswa($data)
+    {
+        $query = $this->db->table('mahasiswa')
+            ->insert($data);
+        return $query;
+    }
+
+    public function getMahasiswaById($id)
+    {
+        $query = $this->db->table('mahasiswa')
+            ->select("mahasiswa.*,kelas.nama as nama_kelas,prodi.nama as nama_prodi")
+            ->join('kelas', 'kelas.id = mahasiswa.id_kelas')
+            ->join('prodi', 'prodi.id = mahasiswa.id_prodi')
+            ->where('mahasiswa.id', $id)
+            ->get();
+        return $query;
+    }
+
+    public function updateMahasiswa($data, $id)
+    {
+        $query = $this->db->table('mahasiswa')
+            ->where('id', $id)
+            ->update($data);
+        return $query;
+    }
+
+    public function deleteMahasiswa($id)
+    {
+        $query = $this->db->table('mahasiswa')
+            ->where('id', $id)
+            ->delete();
+        return $query;
+    }
+
+
+    // get all prodi
+    public function getProdi()
+    {
+        $query = $this->db->table('prodi')
+            ->get();
+        return $query;
+    }
+
+    // get all kelas
+    public function getKelas()
+    {
+        $query = $this->db->table('kelas')
             ->get();
         return $query;
     }
